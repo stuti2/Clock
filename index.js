@@ -33,8 +33,18 @@ function checkTime(x){
   return x;
 }
 
-var particles = Particles.init({
-	selector: '.background',
-  color: ['#777777','#D3D3D3'],
-  connectParticles: true
-});
+window.onload = function(){
+  Particles.init({
+  	selector: '.background',
+    color: ['#777777','#D3D3D3'],
+    connectParticles: true,
+    responsive: [{
+  	breakpoint: 800,
+    options: {
+    	maxParticles: 50,
+      connectParticles: true
+    }
+  }]
+  });
+};
+
