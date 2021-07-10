@@ -37,15 +37,4 @@ var particles = Particles.init({
 	selector: '.background',
   color: ['#777777','#D3D3D3'],
   connectParticles: true
-  // reponsive: [{
-  //   breakpoint:800,
-  //   options: {
-  //     maxParticles:200
-  //   }
-  // }, {
-  //   breakpoint: 400,
-  //   options: {
-  //     maxParticles: 80
-  //   }
-  // }]
 });
