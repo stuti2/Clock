@@ -1,0 +1,95 @@
+
+div{
+  text-align: center;
+}
+
+.background {
+  background-color: #000000;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#container{
+  position: relative;
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  background: url(clock.png) no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+#time , #day, #title{
+  position:relative;
+  color: #ffffff;
+  font-weight: 100;
+  z-index: 1;
+}
+
+#time{
+  margin: 10px 15% 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-family: 'Yomogi', cursive;
+}
+
+#day {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+}
+
+#title{
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+  padding: 5px 10px;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+  #container{
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+  }
+  #time{
+    font-size: 2.5rem;
+  }
+  #day {
+    font-size: 1.5rem;
+  }
+}
