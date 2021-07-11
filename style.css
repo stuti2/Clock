@@ -42,16 +42,16 @@ div{
 }
 
 #title{
-  font-family: 'Satisfy', cursive;
-  font-size: 2rem;
-  padding: 5px 10px;
+  font-family: 'Fuggles', cursive;
+  font-size: 3rem;
+  padding: 5px 10px 0;
 }
 
 #hour,
 #minute,
 #second {
     position: absolute;
-    background: black;
+    background: #000000;
     border-radius: 10px;
     transform-origin: bottom;
 }
